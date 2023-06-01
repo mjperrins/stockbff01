@@ -1,0 +1,21 @@
+# Description: The port.yml file is the main file of the port gitOps.
+# It contains all the information about the components that are part of the system.
+
+# domain
+- identifier: orders
+  title: Orders
+  blueprint: domain
+  properties:
+    description: The orders domain is responsible for managing the process of enrolling and maintaining customers in a orders service. This may include tasks such as handling orders, payments, and customer support.
+    architecture: https://lucid.app/documents/embedded/c3d64493-a5fe-4b18-98d5-66d355080de3#
+    techSpec: https://notioniframe.com/notion/cd2q9rpo7la
+    domainDocs: https://confluence.com/orders
+    slackChannel: https://slack.com/orders
+# systems
+- identifier: cart
+  title: Cart
+  blueprint: system
+  properties:
+    description: The cart is a system that contains all the cart related products with the ability to add, remove, and update products within the Customers card.
+    architecture: https://lucid.app/documents/embedded/c3d64493-a5fe-4b18-98d5-66d355080de3#
+    slackChannel: https://slack.com/cart
